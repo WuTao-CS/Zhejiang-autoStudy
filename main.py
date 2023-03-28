@@ -71,7 +71,7 @@ if __name__ == '__main__':
         res,checkFlag = getJoin(session, access_token, current_course, nid, cardNo)
 
         DD_BOT_TOKEN = os.getenv("DD_BOT_TOKEN")
-        DD_BOT_SECRET = os.getenv("DD_BOT_SECRET")
+        DD_BOT_SECRET = ""
         res = json.loads(res)
         dingpush = dingPush.dingpush(
             "青年大学习签到结果",
